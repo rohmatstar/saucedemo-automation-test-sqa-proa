@@ -1,0 +1,755 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-21T12:08:13.906Z",
+        "line": 2,
+        "name": "User successfully initiates checkout with products in the cart",
+        "description": "",
+        "id": "checkout;user-successfully-initiates-checkout-with-products-in-the-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5258592100,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the user is on the Saucedemo login page",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.navigateToLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2757245100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "enter credentials, username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 57
+                }
+              ],
+              "location": "stepdefinitions.StepDefinitions.enterCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 312934300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "clicks the \u0027Login\u0027 button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.clickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 290426900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user selects a product to purchase",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.selectProduct()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 142325900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "adds it to the cart",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.addToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 383714600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks the \u0027Checkout\u0027 button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.clickCheckoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 544774400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "fill first name, last name, and zip code",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.fillPersonalInfo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 164768800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "clicks the \u0027continue\u0027 button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.clickContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 152801900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clicks the \u0027finish\u0027 button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.clickFinishButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6706067400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user successfully proceeds to the checkout overview page",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.verifyCheckoutOverviewPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-10-21T12:08:30.757Z",
+        "line": 14,
+        "name": "User fails to initiate checkout with an empty cart",
+        "description": "",
+        "id": "checkout;user-fails-to-initiate-checkout-with-an-empty-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9214110300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user is on the Saucedemo login page",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.navigateToLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 729067800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "enter credentials, username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 57
+                }
+              ],
+              "location": "stepdefinitions.StepDefinitions.enterCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 614708100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "clicks the \u0027Login\u0027 button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.clickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 538710100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "clicks the \u0027Checkout\u0027 button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.clickCheckoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Error message element not found. Test step failed.\r\n\tat stepdefinitions.StepDefinitions.verifyEmptyCartErrorMessage(StepDefinitions.java:112)\r\n\tat ✽.the user receives an error message indicating the cart is empty(file:///D:/--%20DTS%20PROA%20--/Homework/SaucedemoAutomationTest/src/test/resources/checkout.feature:19)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".error-message-container.error\"}\n  (Session info: chrome\u003d118.0.5993.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027AHN-YU-JIN\u0027, ip: \u0027192.168.231.229\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002721.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\\Users\\AHNYUJ~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 56cb8d22045e8c777006b25d962cc8b6\n*** Element info: {Using\u003dcss selector, value\u003d.error-message-container.error}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat stepdefinitions.StepDefinitions.verifyEmptyCartErrorMessage(StepDefinitions.java:110)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)\r\n",
+              "duration": 1006225300,
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "the user receives an error message indicating the cart is empty",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.verifyEmptyCartErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Checkout",
+    "description": "",
+    "id": "checkout",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/checkout.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-21T12:08:43.021Z",
+        "line": 2,
+        "name": "User successfully logs in",
+        "description": "",
+        "id": "login;user-successfully-logs-in",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6342600900,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the user is on the Saucedemo login page",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.navigateToLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1139233400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "enter credentials, username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 57
+                }
+              ],
+              "location": "stepdefinitions.StepDefinitions.enterCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 280129000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "clicks the \u0027Login\u0027 button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.clickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2553988500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is redirected to the product page",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.redirectToProductPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-10-21T12:08:53.384Z",
+        "line": 8,
+        "name": "User fails to log in with invalid credentials",
+        "description": "",
+        "id": "login;user-fails-to-log-in-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4080223200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user is on the Saucedemo login page",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.navigateToLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 811392100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enter credentials, username \"standard_user\" and password \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"123\"",
+                  "offset": 57
+                }
+              ],
+              "location": "stepdefinitions.StepDefinitions.enterCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 180864400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clicks the \u0027Login\u0027 button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.clickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1847335400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user receives an error message and remains on the login page",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.receiveErrorMessageWhenLoginFailed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-21T12:09:00.347Z",
+        "line": 2,
+        "name": "User successfully logs out",
+        "description": "",
+        "id": "logout;user-successfully-logs-out",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3870814500,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the user is on the Saucedemo login page",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.navigateToLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 595477800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "enter credentials, username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 57
+                }
+              ],
+              "location": "stepdefinitions.StepDefinitions.enterCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 262058300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "clicks the \u0027Login\u0027 button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.clickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 358747700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "clicks the \u0027logout\u0027 button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.clickLogoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1442918000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify the user is on login page",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.verifyLoginPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-10-21T12:09:06.901Z",
+        "line": 9,
+        "name": "User fails to access product page after logging out",
+        "description": "",
+        "id": "logout;user-fails-to-access-product-page-after-logging-out",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1994729000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user is on the Saucedemo login page",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.navigateToLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1768423100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "enter credentials, username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 57
+                }
+              ],
+              "location": "stepdefinitions.StepDefinitions.enterCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 210212700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clicks the \u0027Login\u0027 button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.clickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 260181000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clicks the \u0027logout\u0027 button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.clickLogoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 461650800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify user cannot go to the product page",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.verifyCannotGoToProductPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Logout",
+    "description": "",
+    "id": "logout",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/logout.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-21T12:09:11.605Z",
+        "line": 2,
+        "name": "See product detail",
+        "description": "",
+        "id": "product;see-product-detail",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3715433400,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the user is on the Saucedemo login page",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.navigateToLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 553282400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "enter credentials, username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 57
+                }
+              ],
+              "location": "stepdefinitions.StepDefinitions.enterCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 318815000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "clicks the \u0027Login\u0027 button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.clickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 218103700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user selects a product to purchase",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.selectProduct()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 312170200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicks the \u0027logout\u0027 button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.clickLogoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 535335400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify the user is on login page",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.verifyLoginPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-10-21T12:09:17.275Z",
+        "line": 10,
+        "name": "Filter products",
+        "description": "",
+        "id": "product;filter-products",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4046089100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user is on the Saucedemo login page",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.navigateToLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 534596700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "enter credentials, username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 57
+                }
+              ],
+              "location": "stepdefinitions.StepDefinitions.enterCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 465755500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clicks the \u0027Login\u0027 button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.clickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 592980700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user filter product",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.userSelectsSortingOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 409475800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "clicks the \u0027logout\u0027 button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.clickLogoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 556019500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "verify the user is on login page",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.verifyLoginPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Product",
+    "description": "",
+    "id": "product",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/product.feature",
+    "tags": []
+  }
+]
